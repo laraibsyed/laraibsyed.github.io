@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Laraib Syed | Personal Portfolio </title>
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="lightsaber">
+            <div class="hilt"> </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="static">
+            <h1>Hi! I'm <span class="auto-type"></span></h1>
+            <h2>Information Technology Student</h2>
+            <h4>AI Enthusiast, Master (Robotics) Builder, VR Fanatic, Aspiring Game Dev</h4>
+
+            <div class="skills">
+                <h4>Some of my skills include:</h4>
+                <p>Arduino &nbsp;&nbsp;&nbsp; HTML &nbsp;&nbsp;&nbsp; CSS &nbsp;&nbsp;&nbsp; JavaScript<br>Java
+                    &nbsp;&nbsp;&nbsp; MySQL &nbsp;&nbsp;&nbsp; Python &nbsp;&nbsp;&nbsp; Tableau</p>
+            </div>
+
+            <div class="nav">
+                <a href="#about">ABOUT</a><br>
+                <a href="#projects">PROJECTS</a><br>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/laraibsyed" target="_blank">
+                    <i style="font-size: 35px;" class="fa-brands fa-linkedin"></i>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/laraibsyed" target="_blank">
+                    <i style="font-size: 35px;" class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scrollable">
+            <div id="about">
+                I'm a student at <b>Middlesex University</b>, constantly expanding my knowledge by exploring various
+                technologies online,
+                learning through platforms like <b>Google</b>, <b>Cisco</b>, and <b>Microsoft</b>. I've been coding for
+                <b>seven</b> years since the young age of 13.<br><br>
+
+                <b>Learning</b> and <b>exploring</b> new things is not just a hobby for me; it's a <b>passion</b> that
+                drives me forward.<br><br>
+
+                As a <b>creative individual</b>, I thoroughly enjoy the art of design. However, I must admit that
+                drawing isn't
+                my forte. But fear not! If you're ever in need of <b>stickman drawings</b>, I happen to excel in that
+                particular <b>artistic domain</b>.<br><br>
+
+                I believe that a <b>vibrant and enjoyable</b> approach to work can lead to <b>remarkable</b> outcomes.
+                Let's connect and embark on exciting projects together!<br><br>
+            </div>
+
+            <div id="projects">
+                <h4>Here are some of my notable projects:</h4>
+                <div class="project">
+                    <img src="imgs/irrigation.jpg" alt="smart irrigation system">
+                    <div class="content">
+                        <h5>Smart Irrigation System</h5>
+                        <p>Our intelligent system is designed to effortlessly monitor and regulate soil moisture levels
+                            for your plants. It automatically waters them when necessary, ensuring they receive the
+                            perfect amount of hydration. Additionally, it keeps track of the water levels in the tank,
+                            notifying you when a refill is needed.</p>
+                        <div class="tags">
+                            <p>Arduino</p>
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="imgs/navibots.jpg" alt="smart car">
+                    <div class="content">
+                        <h5>Autonomous Car</h5>
+                        <p>This smart car uses advanced technology to navigate roads autonomously while avoiding
+                            obstacles and detecting signals.</p>
+                        <div class="tags">
+                            <p>Arduino</p>
+                            <p>Raspberry Pi</p>
+                            <p>Python</p>
+                            <p>OpenCV</p>
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="imgs/expensetracker.jpg" alt="expense tracker application">
+                    <div class="content">
+                        <h5>Expense Tracker</h5>
+                        <p> An expense tracker in which you can allocate your budget for each category every month and
+                            you can spend money for each category. </p>
+                        <div class="tags">
+                            <p>Java</p>
+                            <p>JavaFX</p>
+                            <p>Scene Builder</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5><a href="projectlist.html">View my projects masterlist <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
+                <div id="contact">
+                    <h4>Contact me!</h4><br>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                            <label>Your Name: <input type="text" name="name" placeholder="Full Name..." /></label>
+                        </p>
+                        <p>
+                            <label>Your Email: <input type="email" name="email"
+                                    placeholder="Email Address..." /></label>
+                        </p>
+                        <p>
+                            <label>Subject: <input type="text" placeholder="Subject..."></label>
+                        </p>
+                        <p>
+                            <label>Message: <textarea type="text" name="message"
+                                    placeholder="Type your message here..."></textarea></label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- <script src="index.js"></script> -->
+        <script src="https://kit.fontawesome.com/13137c663d.js" crossorigin="anonymous"></script>
+        <script>
+            var types = new Typed(".auto-type", {
+                strings: ["Laria", "Laraib Syed!"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: false
+            });
+        </script>
+
+</body>
+
+</html>

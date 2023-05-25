@@ -1,0 +1,356 @@
+* {
+    color: white;
+    cursor: default;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #05033A, #07044D, #011055, #090747);
+    background-size: 4000% 4000%;
+    animation: gradient 10s ease infinite;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+}
+
+.static {
+    flex: 0 0 40%;
+    position: fixed;
+    float: left;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scrollable {
+    margin-top: 50px;
+    margin-left: 47%;
+    margin-right: 50px;
+    overflow: auto;
+    position: relative;
+    float: right;
+
+}
+
+/* Additional Styles */
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    max-width: 550px;
+    word-wrap: break-word;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+span {
+    color: #35bcdc;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.nav {
+    margin-top: 80px;
+}
+
+.nav a:hover,
+#projects a:hover {
+    text-decoration: underline;
+    color: #35bcdc;
+    transition: .4s ease;
+}
+
+.socials {
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #35bcdc;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+b:hover {
+    color: #35bcdc;
+    transition: color 0.5s;
+}
+
+#projects {
+    margin-top: 70px;
+}
+
+.project img {
+    height: 200px;
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.project:hover {
+    background-color: #7483867a;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+
+.project .content {
+    flex: 1 1 auto;
+}
+
+.project .tags {
+    margin-top: 10px;
+}
+
+.project .tags p {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #35bddc63;
+    border-radius: 20px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+
+.project .tags p:hover {
+    background-color: #35bddc;
+    transition: .4s ease;
+}
+
+#contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #35bcdc;
+    background-color: inherit;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    height: 150px;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: #35bddc;
+}
+
+button {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: #35bcdc;
+    background-color: inherit;
+}
+
+button:hover {
+    /* background-color: #030221; */
+    background-color: #35bcdc;
+    transition: .4s ease;
+}
+
+.description-cell {
+    max-width: 350px;
+    word-wrap: break-word;
+}
+
+.projectlist .tags p {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #35bddc63;
+    border-radius: 20px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.projectlist .tags p:hover {
+    background-color: #35bddc;
+    transition: .4s ease;
+}
+
+th,
+td {
+    padding: 13px;
+}
+
+i{
+    cursor: pointer;
+}
+
+.projectlist{
+    margin-top: 150px;
+    display: grid;
+    place-items: center;
+}
+
+/* Add media queries for different screen sizes */
+@media (max-width: 900px) {
+    .static {
+      position: static;
+      float: none;
+      margin: 0;
+    }
+  
+    .scrollable {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .static {
+      position: static;
+      float: none;
+      margin: 0;
+    }
+  
+    .scrollable {
+      margin: 0;
+    }
+  }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 576px) {
+    .container {
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .static,
+    .scrollable {
+      width: 100%;
+    }
+  
+    .scrollable {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  
+    .nav {
+      margin-top: 20px;
+    }
+  
+    .socials {
+      margin-top: 20px;
+    }
+  
+    #projects {
+      margin-top: 40px;
+    }
+    
+    .project {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .project img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .project .content {
+      margin-left: 0;
+    }
+    
+    .project .tags p {
+      margin-bottom: 5px;
+    }
+    
+    #contact {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    .projectlist {
+      margin-top: 100px;
+    }
+
+    /* Hide table headers on small screens */
+    th {
+      display: none;
+    }
+  
+    /* Set table cells to display as block elements */
+    td {
+      display: block;
+    }
+  
+    /* Add spacing and styling to individual table cells */
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  
+    /* Adjust padding and font size for cell content */
+    td {
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+  
+  
